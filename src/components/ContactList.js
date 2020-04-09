@@ -1,11 +1,6 @@
 import React from 'react';
 import Contact from './Contact'
 
-
-
-
-
-
 const users = [
     {
       name: 'Robert Reyes',
@@ -37,7 +32,7 @@ const users = [
     const ContactList = () => (
         <div>
             {users.map(user => ( 
-                <Contact key={user} name={user.name} avatar={user.avatar} online={user.online} />
+                <Contact name={user.name} avatar={user.avatar} online={user.online} key={user}/>
             )) }
         </div>
     );
